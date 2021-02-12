@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/cv_marker"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:cardCornerRadius="3dp"
+       android:padding="10dp"
+       app:cardElevation="3dp">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:padding="3dp">
+           <ImageView
+               android:id="@+id/img_grade"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_sharp_grade_24"></ImageView>
+           <TextView
+               android:id="@+id/text_marker"
+               android:layout_width="wrap_content"
+               android:textColor="@color/marker_color"
+               android:clickable="true"
+               android:layout_height="wrap_content"></TextView>
+       </LinearLayout>
+
+
+   </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@+id/image_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_marker"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_location_on_24"
+        app:tint="@color/marker_color" />
+</RelativeLayout>
